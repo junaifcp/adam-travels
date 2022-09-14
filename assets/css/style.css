@@ -304,6 +304,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
   padding: 0;
 }
+.headerSub{
+  color: #fff !important;
+}
+.adamTravels{
+  align-items: center;
+}
+@media screen and (max-width:441px) {
+  .adamTravels{
+    /* align-items: center; */
+    display: none;
+  }
+}
 #hero:before {
   content: "";
   background: rgba(56, 64, 70, 0.7);
