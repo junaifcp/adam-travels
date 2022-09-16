@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 /*--------------------------------------------------------------
@@ -211,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .innerNav{
   margin-left: 15px;
+  /* line-height: 1px !important; */
 }
 .navbar .dropdown ul li {
   min-width: 200px;
