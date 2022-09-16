@@ -29,6 +29,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: #444444;
 }
 
 /* line 13, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
@@ -78,8 +79,9 @@ button {
 
 /* line 40, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
 h1, h2, h3, h4, h5 {
-  font-family: "Rubik", sans-serif;
-  color: #001D38;
+  /* font-family: "Rubik", sans-serif; */
+   font-family: "Raleway", sans-serif;
+  color: #2a3d50;
 }
 
 /* line 44, ../../Arafath/CL/December/231. Travel-02/HTML/scss/theme-default.scss */
