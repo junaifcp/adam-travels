@@ -97,6 +97,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -106,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #fff;
+  background: #00B9AD;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   /* display: flex !important; */
   /* justify-content: space-between !important; */
@@ -117,10 +118,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #384046;
+  color: #fff;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
-  color: #384046;
+  color: #fff;
   text-decoration: none;
 }
 #header .logo img {
@@ -134,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 30px;
 }
 .header-social-links a {
-  color: #9ba6af;
+  color: #fff;
   padding-left: 8px;
   display: inline-block;
   line-height: 0px;
@@ -179,7 +180,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #4f5a62;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -189,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
 }
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-  color: #3498db;
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -343,23 +344,49 @@ h1, h2, h3, h4, h5, h6 {
   display: block !important;
 }
 
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.back-video{
+  position: absolute;
+  right: 0;
+  /* bottom: 0; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100vh; */
+  z-index: -1;
+}
+
+@media screen and (max-width:991px) {
+  .back-video{
+    /* align-items: center; */
+    display: none;
+  }
+  #hero{
+     background: url("../img/header1.jpg") center center;
+  }
+}
 #hero {
   width: 100%;
-  height: 60vh;
-  background: url("../img/header1.jpg") center center;
+  height: 100vh;
+  /* background: url("../img/header1.jpg") center center; */
+  /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
   background-size: cover;
   position: relative;
   margin-top: 70px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .headerSub{
   color: #fff !important;
 }
 .adamTravels{
   align-items: center;
+  color: #fff;
 }
 @media screen and (max-width:441px) {
   .adamTravels{
@@ -369,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(83, 97, 107, 0.529);
+  /* background: rgba(174, 201, 221, 0.529); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -381,13 +408,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 58px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 66px;
+  text-transform: uppercase;
   color: #fff;
 }
 #hero h1 span {
   border-bottom: 4px solid #3498db;
+}
+#hero h1 span:hover {
+  border-bottom: 4px solid #00B9AD;
 }
 #hero h2 {
   color: rgba(255, 255, 255, 0.8);
@@ -396,7 +427,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 13px;
   letter-spacing: 2px;
   display: inline-block;
@@ -408,11 +439,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 #hero .btn-get-started:hover {
-  background: #4ea5e0;
+  background: #00B9AD;
 }
 @media (max-width: 992px) {
+  
   #hero {
     height: calc(100vh - 70px);
+
   }
 }
 @media (max-width: 768px) {
