@@ -348,31 +348,31 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.back-video{
+/* .back-video{
   position: absolute;
   right: 0;
-  /* bottom: 0; */
   top: 0;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
   z-index: -1;
-}
+} */
+/* bottom: 0; */
+/* height: 100vh; */
 
+/* align-items: center; */
 @media screen and (max-width:991px) {
-  .back-video{
-    /* align-items: center; */
+  /* .back-video{
     display: none;
-  }
+  } */
   #hero{
-     background: url("../img/header1.jpg") center center;
+     background: url("../img/header1.jpg");
   }
 }
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/header1.jpg") center center; */
-  /* background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+  background: url("../img/header1.jpg");
+  /* background-image: linear-gradient(rgba(65, 65, 69, 0.221),rgba(101, 97, 115, 0.26)); */
   background-size: cover;
   position: relative;
   margin-top: 70px;
